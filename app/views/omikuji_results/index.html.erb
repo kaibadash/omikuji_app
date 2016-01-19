@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<h1>おみくじ</h1>
+
+<%= render 'form' %>
+
+<div class="omikuji_list">
+  <% @omikuji_results.each do |omikuji_result| %>
+  <div class="omikuji">
+    <span class="omikuji_data"><%= omikuji_result.omikuji %></span> の結果、
+    <span class="omikuji_result"><%= omikuji_result.result %></span> が選ばれました。
+  </div>
+  <% end %>
+</div>

@@ -1,0 +1,20 @@
+<%= form_for(@omikuji_result) do |f| %>
+  <% if @omikuji_result.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@omikuji_result.errors.count, "error") %> prohibited this omikuji_result from being saved:</h2>
+
+      <ul>
+      <% @omikuji_result.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field omikuji_data_field">
+    <%= f.text_field :omikuji, placeholder: "おみくじ対象をスペース区切りで入力(例:やまだ すずき さとう)" %>
+  </div>
+  <div class="actions">
+    <%= f.submit("おみくじを引く") %>
+  </div>
+<% end %>

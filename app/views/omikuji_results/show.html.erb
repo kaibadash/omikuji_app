@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Omikuji:</strong>
+  <%= @omikuji_result.omikuji %>
+</p>
+
+<p>
+  <strong>Result:</strong>
+  <%= @omikuji_result.result %>
+</p>
+
+<%= link_to 'Edit', edit_omikuji_result_path(@omikuji_result) %> |
+<%= link_to 'Back', omikuji_results_path %>
