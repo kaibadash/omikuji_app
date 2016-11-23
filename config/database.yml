@@ -11,7 +11,7 @@ default: &default
   database: test
   pool: 5
   username: test
-  password: PLEASE_SET
+  password: test
   host: localhost
 
 development:
