@@ -12,5 +12,19 @@
 
 <%= yield %>
 
+
+<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC02bWU4Xm14lDnR6lvgt_v5AzCIn2JhwQ",
+    authDomain: "omikuji-e2109.firebaseapp.com",
+    databaseURL: "https://omikuji-e2109.firebaseio.com",
+    storageBucket: "omikuji-e2109.appspot.com",
+    messagingSenderId: "895493298762"
+  };
+  firebase.initializeApp(config);
+</script>
+
 </body>
 </html>
